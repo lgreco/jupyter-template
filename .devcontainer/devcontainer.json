@@ -1,0 +1,25 @@
+{
+  "name": "python-jupyter-lite",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": "."
+  },
+
+  "waitFor": "containerCreate",
+
+  "mounts": [
+    "type=cache,target=/root/.cache/pip"
+  ],
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-toolsai.jupyter"
+      ]
+    },
+    "codespaces": {
+      "openFiles": []
+    }
+  }
+}
