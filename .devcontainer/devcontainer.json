@@ -1,5 +1,5 @@
 {
-  "name": "python-lite",
+  "name": "python-jupyter-lite",
   "build": {
     "dockerfile": "Dockerfile",
     "context": "."
